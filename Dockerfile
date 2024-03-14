@@ -16,6 +16,6 @@ ENV FLASK_APP=webapp/setup.py
 
 # Expose the port the app runs on
 EXPOSE 8000
-
+ENV FLASK_RUN_HOST=0.0.0.0
 # Command to run the app
 CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
