@@ -1,8 +1,11 @@
 FROM ubuntu
 
-# Install dependencies
-RUN apt update && apt install python3-pip -y
-RUN pip3 install Flask tensorflow-cpu pillow
+RUN apt update
+RUN apt install python3-pip -y
+RUN pip3 install Flask
+RUN pip3 install tensorflow
+RUN pip3 install pillow
+
 
 # Set the working directory in the container
 WORKDIR /app
